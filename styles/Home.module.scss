@@ -1,0 +1,387 @@
+.Main {
+  .Hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .Tagline {
+      max-width: 45%;
+      & > span > span:nth-child(3) {
+        font-weight: 400;
+      }
+    }
+
+    .Description {
+      // border: 1px solid blue;
+      // display: flex;
+      // align-items: flex-start;
+      font-family: "Montserrat";
+      max-width: 50%;
+      & > span > span {
+        margin-block-end: -25px;
+      }
+
+      .CtaGroup {
+        display: flex;
+        margin-top: 32px;
+        gap: 16px;
+        // flex-wrap: wrap;
+      }
+
+      .PhoneNumber {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .ContinueArrow {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      translate: -50% 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .Expo1 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    .Description {
+      max-width: 50%;
+      & > span > span:nth-child(9) {
+        font-weight: 400;
+      }
+      // z-index: 10;
+      button {
+        display: block;
+      }
+    }
+
+    .Mirror {
+      position: absolute;
+      background-color: white;
+      right: 0;
+      top: -50px;
+      width: 600px;
+      height: 150%;
+      rotate: 10deg;
+      translate: 100px 0;
+      color: black;
+      mix-blend-mode: difference;
+      pointer-events: none;
+      z-index: 101;
+    }
+
+    .MirrorText {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      max-width: 300px;
+    }
+  }
+
+  .Clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .Header {
+      & > span > span:nth-child(4) {
+        font-weight: 400;
+      }
+
+      margin-bottom: 32px;
+    }
+
+    .ClientName {
+      border-top: 2px solid white;
+      color: white;
+      height: 128px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      font-weight: 100;
+
+      &:nth-child(4) {
+        border-bottom: 2px solid white;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .ClientSelector {
+        position: absolute;
+        // bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        mix-blend-mode: difference;
+        background-color: #fff;
+        pointer-events: none;
+      }
+    }
+
+    .Description {
+      max-width: 60%;
+    }
+    button {
+      margin-top: 32px;
+      width: fit-content;
+    }
+  }
+
+  .Expo2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    .Header {
+      max-width: 50%;
+      & > span > span:nth-child(3) {
+        font-weight: 400;
+      }
+      // z-index: 10;
+      button {
+        display: block;
+      }
+    }
+
+    .Mirror {
+      position: absolute;
+      background-color: white;
+      left: 0;
+      top: -50px;
+      width: 700px;
+      height: 150%;
+      rotate: -10deg;
+      translate: -100px 0;
+      color: black;
+      mix-blend-mode: difference;
+      pointer-events: none;
+      z-index: 101;
+    }
+
+    .Services {
+      // border: 1px solid red;
+      width: 50%;
+
+      button {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  .Contact {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    .ContactInner {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .CallToAction {
+        max-width: 50%;
+        .Header {
+          & > span > span:nth-child(3) {
+            font-weight: 300;
+          }
+        }
+
+        .Description {
+          max-width: 650px;
+
+          .PhoneNumber {
+            margin-top: 32px;
+          }
+        }
+      }
+
+      .ContactForm {
+        width: 50%;
+        min-width: 300px;
+        padding-right: 200px;
+        .NameWrapper {
+          display: flex;
+          gap: 16px;
+        }
+
+        & > * {
+          margin-block: 16px;
+        }
+
+        input[type="submit"] {
+          width: fit-content;
+        }
+      }
+    }
+  }
+
+  .Quote {
+    padding-inline: var(--gutter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .QuoteWrapper {
+      display: flex;
+      flex-direction: column;
+      div:last-child {
+        align-self: flex-end;
+      }
+
+      div:last-child {
+        font-weight: 400;
+      }
+    }
+  }
+
+  .Footer {
+    padding-inline: var(--gutter);
+    padding-block-end: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 150px;
+    gap: 16px;
+
+    .Logo {
+      font-size: 24;
+      font-family: var(--display-font);
+    }
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .Main {
+    .Hero {
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+
+      .Description {
+        max-width: 100%;
+      }
+
+      .Tagline {
+        max-width: 100%;
+      }
+    }
+
+    .Expo1 {
+      .Description {
+        max-width: 100%;
+      }
+
+      .Mirror {
+        width: 250px;
+        translate: 150px 0;
+      }
+
+      .MirrorText {
+        // right: unset;
+        // left: 50%;
+        // translate: -50% 0;
+        // margin-block-start: 32px;
+        // border: 1px solid red;
+        padding: 16px;
+      }
+    }
+
+    .Clients {
+      .Description {
+        max-width: 80%;
+      }
+    }
+
+    .Expo2 {
+      .Mirror {
+        width: 500px;
+      }
+    }
+
+    .Contact {
+      .ContactInner {
+        gap: 16px;
+        .ContactForm {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Main {
+    .Contact {
+      .ContactInner {
+        gap: 16px;
+        flex-direction: column;
+
+        .CallToAction {
+          max-width: 100%;
+        }
+
+        .ContactForm {
+          width: 100%;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Main {
+    .Clients {
+      .ClientName {
+        height: 100px;
+      }
+
+      .Description {
+        max-width: 100%;
+      }
+    }
+
+    .Expo2 {
+      flex-direction: column;
+      justify-content: center;
+
+      .Header {
+        max-width: 100%;
+        margin-bottom: 32px;
+      }
+
+      .Mirror {
+        translate: -300px 0;
+      }
+
+      .Services {
+        width: auto;
+
+        button {
+          margin-top: 16px;
+        }
+      }
+    }
+
+    .Footer {
+      flex-direction: column-reverse;
+      align-items: center;
+      // padding: 64px;
+      height: auto;
+      padding-block-end: 8px;
+      padding-block-start: 32px;
+    }
+  }
+}

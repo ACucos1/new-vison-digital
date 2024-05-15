@@ -1,0 +1,90 @@
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-inline: var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 32px;
+  z-index: 100;
+
+  .Logo {
+    font-size: 24;
+    font-family: var(--display-font);
+  }
+
+  .BurgerWrapper {
+    width: 48px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .BurgerBar {
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      transform-origin: left;
+      transition: background-color 0.3s ease, rotate 0.3s ease, width 0.3s ease;
+    }
+
+    &.Open {
+      .BurgerBar {
+        width: 51px;
+        &:first-child {
+          rotate: 45deg;
+        }
+
+        &:nth-child(2) {
+          // background-color: transparent;
+          width: 0px;
+        }
+
+        &:last-child {
+          rotate: -45deg;
+        }
+      }
+    }
+  }
+
+  .Menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+    background-color: #fff;
+    // z-index: -1;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    translate: 100% 0;
+    border-radius: 100%;
+
+    ul {
+      pointer-events: all;
+      list-style: none;
+      li {
+        color: black;
+        font-family: inherit;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Navbar {
+    .Menu {
+      width: 100vw;
+    }
+  }
+}
