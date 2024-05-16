@@ -274,7 +274,7 @@ a high-level estimate and scope of work.'
               name='contact-form'
               method='POST'
               action='/'
-              data-netlify="true"
+              data-netlify='true'
               onSubmit={handleFormSubmit}
               className={`${styles.ContactForm} regular-text-small gsap-fade-in`}>
               <div className={`regular-text-med`}>
@@ -288,7 +288,8 @@ a high-level estimate and scope of work.'
               <input type='email' placeholder='Email' required />
               <input
                 type='file'
-                name='Project Proposal/RFP'
+                name='proposal'
+                placeholder='Project Proposal/RFP'
                 accept='.pdf, .docx, .doc'
                 required
               />
