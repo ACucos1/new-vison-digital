@@ -12,9 +12,8 @@ export default function Home() {
   const animationRef = useRef();
 
   const handleFormSubmit = (e) => {
-    e.preventDefault();
-
     const myForm = e.target;
+    if (!form.checkValidity()) return;
     const formData = new FormData(myForm);
 
     fetch("/", {
@@ -23,6 +22,7 @@ export default function Home() {
     })
       .then(console.log("Form Submitted"))
       .catch((err) => console.log(err));
+    e.preventDefault();
   };
 
   //Client Section Animation
@@ -271,7 +271,7 @@ a high-level estimate and scope of work.'
               </div>
             </div>
             <form
-              name='contact'
+              name='contact-form'
               method='POST'
               action='/'
               data-netlify='true'
