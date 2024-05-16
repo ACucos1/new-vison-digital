@@ -273,6 +273,7 @@ a high-level estimate and scope of work.'
             <form
               name='contact'
               method='POST'
+              action='/'
               data-netlify='true'
               onSubmit={handleFormSubmit}
               className={`${styles.ContactForm} regular-text-small gsap-fade-in`}>
@@ -280,15 +281,16 @@ a high-level estimate and scope of work.'
                 <SplitText text='Project Submission Form' />
               </div>
               <div className={styles.NameWrapper}>
-                <input type='text' placeholder='First Name' />
+                <input type='text' placeholder='First Name' required />
                 <input type='text' placeholder='Last Name' />
               </div>
               <input type='text' placeholder='Company Name' />
-              <input type='email' placeholder='Email' />
+              <input type='email' placeholder='Email' required />
               <input
                 type='file'
                 name='Project Proposal/RFP'
                 accept='.pdf, .docx, .doc'
+                required
               />
               <input className='btn-primary' type='submit' value='Submit' />
             </form>
