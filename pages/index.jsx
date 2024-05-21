@@ -188,6 +188,120 @@ export default function Home() {
           </div>
         </section>
 
+        <section className={styles.ServiceDetails} id='services'>
+          <div className={`${styles.TagLine} regular-text-large`}>
+            <SplitText
+              text='We take care of your website so you can take care of your business'
+              breakIndex={6}
+            />
+          </div>
+
+          <div className={styles.ServicesWrapper}>
+            <div className={styles.ServicesColumn}>
+              {[
+                "Hosting Fees Included",
+                "Unlimited Edits",
+                "24/7 Customer Service",
+              ].map((text) => (
+                <div className={`${styles.Service} regular-text-small`}>
+                  <SplitText text={text} />
+                </div>
+              ))}
+            </div>
+            <div className={styles.ServicesColumn}>
+              {[
+                "40+ Hours of design & development",
+                "100 Google Page Speed Score",
+                "Google Analytics",
+              ].map((text) => (
+                <div className={`${styles.Service} regular-text-small`}>
+                  <SplitText text={text} />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className={`${styles.Description} regular-text-xsmall`}>
+            <SplitText
+              text='We handle all the ins and outs of managing your website, so you don’t have to. You own your domain, content, listing, and profiles. Cancel anytime with no fees or hassle.'
+              // breakIndex={18}
+            />
+          </div>
+
+          {/* <a href='#contact'>
+            <button className='btn-primary'>Get In Touch</button>
+          </a> */}
+        </section>
+
+        <section className={styles.Packages}>
+          <div className={styles.Mirror}></div>
+          <div className={`${styles.Package}`}>
+            <div className={`${styles.PackageHeader} regular-text-large`}>
+              <SplitText text='Basic' />
+            </div>
+            <div className={`${styles.PackagePrice} regular-text-large`}>
+              <SplitText text='$99 per month' />
+            </div>
+            <div className={`regular-text-med`}>
+              <SplitText text='12 month minimum' />
+            </div>
+            {[
+              "Hosting Fees Included",
+              "1 Page",
+              "24/7 Support",
+              "3 Revisions",
+              "Google Analyitics",
+            ].map((text) => (
+              <div className={`${styles.Service} regular-text-small`}>
+                <SplitText text={text} />
+              </div>
+            ))}
+          </div>
+
+          <div className={`${styles.Package}`}>
+            <div className={`${styles.PackageHeader} regular-text-large bold`}>
+              <SplitText text='Standard' />
+            </div>
+            <div className={`${styles.PackagePrice} regular-text-large`}>
+              <SplitText text='$150 per month' />
+            </div>
+            <div className={`regular-text-med`}>
+              <SplitText text='12 month minimum' />
+            </div>
+            {[
+              "Hosting Fees Included",
+              "5 Pages",
+              "24/7 Support",
+              "Unlimited Edits",
+              "Google Analyitics",
+            ].map((text) => (
+              <div className={`${styles.Service} regular-text-small`}>
+                <SplitText text={text} />
+              </div>
+            ))}
+          </div>
+
+          <div className={`${styles.Package}`}>
+            <div className={`${styles.PackageHeader} regular-text-large`}>
+              <SplitText text='E-Commerce' />
+            </div>
+            <div className={`${styles.PackagePrice} regular-text-large`}>
+              <SplitText text='$5000' />
+            </div>
+            <div className={`regular-text-med`}>
+              <SplitText text='min. upfront cost' />
+            </div>
+            {[
+              "Custom Designed",
+              "Custom coded Shopify Integration",
+              "Easy to Edit",
+            ].map((text) => (
+              <div className={`${styles.Service} regular-text-small`}>
+                <SplitText text={text} />
+              </div>
+            ))}
+          </div>
+        </section>
         <section
           className={`${styles.Clients} gsap-clients-wrapper`}
           id='clients'>
@@ -226,29 +340,23 @@ export default function Home() {
           </a>
         </section>
 
-        <section className={styles.Expo2} id='services'>
+        {/* <section className={styles.Expo2} id='LearnMore'>
           <div className={`${styles.Header} regular-text-large`}>
-            <SplitText text='What we do' />
+            <SplitText text='No upfront cost.' />
           </div>
           <div className={styles.Mirror}></div>
           <div className={styles.Services}>
-            <div className={`${styles.Service} regular-text-med`}>
-              <SplitText text='Web Design' />
+            <div className={`${styles.ServiceHeader} regular-text-med`}>
+              <SplitText text='$0 down, $150 per month, 12 month minimum contract' />
             </div>
-            <div className={`${styles.Service} regular-text-med`}>
-              <SplitText text='Web Development' />
+            <div className={`${styles.ServiceDesc} regular-text-small`}>
+              <SplitText text='$0 down for a standard 5 page business website' />
             </div>
-            <div className={`${styles.Service} regular-text-med`}>
-              <SplitText text='Branding & Strategy' />
-            </div>
-            <div className={`${styles.Service} regular-text-med`}>
-              <SplitText text='SEO Management' />
-            </div>
-            <a href='#contact'>
-              <button className='btn-primary gsap-fade-in'>Get In Touch</button>
+            <a href='/services'>
+              <button className='btn-primary gsap-fade-in'>Learn More</button>
             </a>
           </div>
-        </section>
+        </section> */}
 
         <section className={styles.Contact} id='contact'>
           <div className={styles.ContactInner}>

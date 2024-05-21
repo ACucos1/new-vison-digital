@@ -85,6 +85,93 @@
     }
   }
 
+  .ServiceDetails {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 32px;
+    .TagLine {
+      & > span > span:nth-child(n + 14) {
+        font-weight: 400;
+      }
+    }
+
+    .Description {
+      & > span > span:nth-child(13),
+      & > span > span:nth-child(14),
+      & > span > span:nth-child(15),
+      & > span > span:nth-child(16) {
+        font-weight: 400;
+      }
+    }
+
+    .ServicesWrapper {
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+      padding-block: 16px;
+      display: flex;
+      // justify-content: space-between;
+      .ServicesColumn {
+        width: 50%;
+        display: flex;
+        gap: 64px;
+        flex-direction: column;
+        // border: 1px solid red;
+
+        .Service {
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  .Packages {
+    // background-color: #fff;
+    mix-blend-mode: difference;
+    z-index: 101;
+    // color: black;
+    display: flex;
+    min-height: fit-content;
+    position: relative;
+    overflow: hidden;
+    // gap: 64px;
+    .Mirror {
+      position: absolute;
+      background-color: white;
+      left: 0;
+      top: -50px;
+      width: 400px;
+      height: 150%;
+      rotate: -10deg;
+      translate: -100px 0;
+      color: black;
+      mix-blend-mode: difference;
+      pointer-events: none;
+      z-index: 101;
+    }
+
+    .Package {
+      padding: 32px;
+      border-right: 2px solid #fff;
+
+      &:nth-child(2) {
+        // color: black;
+        // background-color: #fff;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+
+      .PackagePrice {
+        & > span > span:nth-child(1) {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
   .Clients {
     display: flex;
     flex-direction: column;
@@ -144,7 +231,7 @@
     overflow: hidden;
     .Header {
       max-width: 50%;
-      & > span > span:nth-child(3) {
+      & > span > span:nth-child(1) {
         font-weight: 400;
       }
       // z-index: 10;
@@ -171,6 +258,12 @@
     .Services {
       // border: 1px solid red;
       width: 50%;
+      .ServiceHeader {
+        & > span > span:nth-child(1),
+        & > span > span:nth-child(3) {
+          font-weight: 400;
+        }
+      }
 
       button {
         margin-top: 32px;
@@ -294,6 +387,62 @@
         // margin-block-start: 32px;
         // border: 1px solid red;
         padding: 16px;
+      }
+    }
+
+    .ServiceDetails {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      gap: 32px;
+
+      .TagLine {
+        font-size: var(--font-size-med);
+      }
+
+      .ServicesWrapper {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        padding-block: 16px;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        .ServicesColumn {
+          width: 100%;
+          display: flex;
+          gap: 16px;
+          flex-direction: column;
+          // border: 1px solid red;
+
+          .Service {
+            font-style: italic;
+            font-size: var(--font-size-med);
+          }
+        }
+      }
+
+      .Description {
+        font-size: var(--font-size-small);
+      }
+    }
+
+    .Packages {
+      flex-direction: column;
+      justify-content: center;
+
+      .Mirror {
+        width: 150px;
+      }
+
+      .Package {
+        border-right: none;
+        border-bottom: 2px solid white;
+        &:last-child {
+          border-bottom: none;
+        }
+        // border: 1px solid red;
       }
     }
 
