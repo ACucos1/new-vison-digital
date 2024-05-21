@@ -23,6 +23,7 @@ export default function Navbar() {
 
   const handleLinkClick = () => {
     setMenuOpen(false);
+    tlRef.current.reverse(0.37);
   };
 
   useEffect(() => {
