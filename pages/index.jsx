@@ -178,7 +178,9 @@ export default function Home() {
         <section className={styles.Expo1} id='expo'>
           <div className={`${styles.Description} regular-text-large`}>
             <SplitText text='We build custom websites that reflect your brand’s unique identity' />
-            <button className='btn-primary gsap-fade-in'>Get In Touch</button>
+            <a href='#contact'>
+              <button className='btn-primary gsap-fade-in'>Get In Touch</button>
+            </a>
           </div>
           <div className={styles.Mirror}></div>
           <div className={`${styles.MirrorText} regular-text-med`}>
@@ -286,11 +288,13 @@ a high-level estimate and scope of work.'
               </div>
               <input type='text' placeholder='Company Name' />
               <input type='email' placeholder='Email' required />
+              <label htmlFor='proposal'>Project Proposal/RFP</label>
               <input
                 type='file'
                 name='proposal'
                 placeholder='Project Proposal/RFP'
                 accept='.pdf, .docx, .doc'
+                // style={{ display: "none" }}
                 required
               />
               <input className='btn-primary' type='submit' value='Submit' />
