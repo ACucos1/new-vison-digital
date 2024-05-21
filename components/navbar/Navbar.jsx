@@ -8,7 +8,17 @@ export default function Navbar() {
   const tlRef = useRef();
 
   const handleBurgerClick = () => {
-    setMenuOpen((prev) => !prev);
+    setMenuOpen((prev) => {
+      const ret = !prev;
+
+      if (ret) {
+        tlRef.current.play();
+      } else {
+        tlRef.current.reverse(0.37);
+      }
+
+      return ret;
+    });
   };
 
   const handleLinkClick = () => {
@@ -31,13 +41,13 @@ export default function Navbar() {
       );
   }, [tlRef]);
 
-  useEffect(() => {
-    if (menuOpen) {
-      tlRef.current.play();
-    } else {
-      tlRef.current.reverse();
-    }
-  }, [menuOpen]);
+  // useEffect(() => {
+  //   if (menuOpen) {
+  //     tlRef.current.play();
+  //   } else {
+  //     // tlRef.current.reverse(0.1);
+  //   }
+  // }, [menuOpen]);
 
   return (
     <nav className={styles.Navbar}>
