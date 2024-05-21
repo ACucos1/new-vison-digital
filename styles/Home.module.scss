@@ -40,7 +40,6 @@
       bottom: 50px;
       left: 50%;
       translate: -50% 0;
-
       &:hover {
         cursor: pointer;
       }
@@ -108,10 +107,6 @@
       overflow: hidden;
       font-weight: 100;
 
-      &:nth-child(4) {
-        border-bottom: 2px solid white;
-      }
-
       &:hover {
         cursor: pointer;
       }
@@ -126,6 +121,10 @@
         background-color: #fff;
         pointer-events: none;
       }
+    }
+
+    a:nth-child(4) {
+      border-bottom: 2px solid white;
     }
 
     .Description {
