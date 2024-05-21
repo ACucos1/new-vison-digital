@@ -1,4 +1,5 @@
 import SplitText from "@/components/splitText/SplitText";
+import FadeInText from "@/components/fadeInText/FadeInText";
 import Navbar from "@/components/navbar/Navbar";
 import styles from "@/styles/Home.module.scss";
 import Head from "next/head";
@@ -184,7 +185,7 @@ export default function Home() {
           </div>
           <div className={styles.Mirror}></div>
           <div className={`${styles.MirrorText} regular-text-med`}>
-            <SplitText text='Mirror, Mirror on the wall...' />
+            <FadeInText text='Mirror, Mirror on the wall...' />
           </div>
         </section>
 
@@ -204,7 +205,7 @@ export default function Home() {
                 "24/7 Customer Service",
               ].map((text) => (
                 <div className={`${styles.Service} regular-text-small`}>
-                  <SplitText text={text} />
+                  <FadeInText text={text} />
                 </div>
               ))}
             </div>
@@ -215,14 +216,14 @@ export default function Home() {
                 "Google Analytics",
               ].map((text) => (
                 <div className={`${styles.Service} regular-text-small`}>
-                  <SplitText text={text} />
+                  <FadeInText text={text} />
                 </div>
               ))}
             </div>
           </div>
 
           <div className={`${styles.Description} regular-text-xsmall`}>
-            <SplitText
+            <FadeInText
               text='We handle all the ins and outs of managing your website, so you don’t have to. You own your domain, content, listing, and profiles. Cancel anytime with no fees or hassle.'
               // breakIndex={18}
             />
@@ -240,10 +241,10 @@ export default function Home() {
               <SplitText text='Basic' />
             </div>
             <div className={`${styles.PackagePrice} regular-text-large`}>
-              <SplitText text='$99 per month' />
+              <FadeInText text='$99 per month' />
             </div>
             <div className={`regular-text-med`}>
-              <SplitText text='12 month minimum' />
+              <FadeInText text='12 month minimum' />
             </div>
             {[
               "Hosting Fees Included",
@@ -253,7 +254,7 @@ export default function Home() {
               "Google Analyitics",
             ].map((text) => (
               <div className={`${styles.Service} regular-text-small`}>
-                <SplitText text={text} />
+                <FadeInText text={text} />
               </div>
             ))}
           </div>
@@ -263,10 +264,10 @@ export default function Home() {
               <SplitText text='Standard' />
             </div>
             <div className={`${styles.PackagePrice} regular-text-large`}>
-              <SplitText text='$150 per month' />
+              <FadeInText text='$150 per month' />
             </div>
             <div className={`regular-text-med`}>
-              <SplitText text='12 month minimum' />
+              <FadeInText text='12 month minimum' />
             </div>
             {[
               "Hosting Fees Included",
@@ -276,7 +277,7 @@ export default function Home() {
               "Google Analyitics",
             ].map((text) => (
               <div className={`${styles.Service} regular-text-small`}>
-                <SplitText text={text} />
+                <FadeInText text={text} />
               </div>
             ))}
           </div>
@@ -286,10 +287,10 @@ export default function Home() {
               <SplitText text='E-Commerce' />
             </div>
             <div className={`${styles.PackagePrice} regular-text-large`}>
-              <SplitText text='$5000' />
+              <FadeInText text='$5000' />
             </div>
             <div className={`regular-text-med`}>
-              <SplitText text='min. upfront cost' />
+              <FadeInText text='min. upfront cost' />
             </div>
             {[
               "Custom Designed",
@@ -297,7 +298,7 @@ export default function Home() {
               "Easy to Edit",
             ].map((text) => (
               <div className={`${styles.Service} regular-text-small`}>
-                <SplitText text={text} />
+                <FadeInText text={text} />
               </div>
             ))}
           </div>
@@ -333,7 +334,7 @@ export default function Home() {
           </a>
 
           <div className={`${styles.Description} regular-text-small`}>
-            <SplitText text="We're proud to have worked with businesses across a wide variety of industries. Whether you're a burgeoning family business or you're a bigger player looking to launch their latest offer with pizzaz, we want to hear form you!" />
+            <FadeInText text="We're proud to have worked with businesses across a wide variety of industries. Whether you're a burgeoning family business or you're a bigger player looking to launch their latest offer with pizzaz, we want to hear form you!" />
           </div>
           <a href='#contact'>
             <button className='btn-primary gsap-fade-in'>Get In Touch</button>
@@ -365,7 +366,7 @@ export default function Home() {
                 <SplitText text="Let's Get Started" />
               </div>
               <div className={`${styles.Description} regular-text-small`}>
-                <SplitText
+                <FadeInText
                   text='Tell us more about your project here or give us a call, and we’ll get back to you with
 a high-level estimate and scope of work.'
                 />
@@ -376,7 +377,7 @@ a high-level estimate and scope of work.'
                     height={48}
                     src='/images/phone.svg'
                   />
-                  <SplitText text='+1 416 697 1428' />
+                  <FadeInText text='+1 416 697 1428' />
                 </div>
               </div>
             </div>
@@ -423,7 +424,7 @@ a high-level estimate and scope of work.'
 
         <footer className={styles.Footer}>
           <div className={styles.Logo}>
-            <SplitText text={"VISON DIGITAL"} breakIndex={1} />
+            <FadeInText text={"VISON DIGITAL"} breakIndex={1} />
           </div>
           <div className={`${styles.PhoneNumber} regular-text-small`}>
             <Image
@@ -432,10 +433,10 @@ a high-level estimate and scope of work.'
               height={24}
               src='/images/phone.svg'
             />
-            <SplitText text='+1 416 697 1428' />
+            <FadeInText text='+1 416 697 1428' />
           </div>
           <div className='regular-text-xsmall'>
-            <SplitText
+            <FadeInText
               text='21 Karl Fraser Rd Unit N 0007 Toronto, ON M3C 3R6'
               breakIndex={7}
             />

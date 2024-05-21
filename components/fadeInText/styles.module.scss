@@ -1,0 +1,15 @@
+.Word {
+  white-space: pre;
+  .LetterWrapper {
+    display: inline-block;
+    // overflow: hidden;
+    letter-spacing: -2%;
+    // white-space: nowrap;
+    margin-block: -10px;
+
+    .Letter {
+      display: inherit;
+      // white-space: pre;
+    }
+  }
+}
