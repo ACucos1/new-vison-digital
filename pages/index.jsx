@@ -20,9 +20,8 @@ export default function Home() {
     fetch("/", {
       method: "POST",
       body: new URLSearchParams(formData).toString(),
-    })
-      .then(console.log("Form Submitted"))
-      .catch((err) => console.log(err));
+    });
+
     e.preventDefault();
   };
 
@@ -386,6 +385,7 @@ a high-level estimate and scope of work.'
               method='POST'
               action='/'
               data-netlify='true'
+              encType='multipart/form-data'
               onSubmit={handleFormSubmit}
               className={`${styles.ContactForm} regular-text-small gsap-fade-in`}>
               <input type='hidden' name='form-name' value='contact-form' />
