@@ -302,6 +302,9 @@
         width: 50%;
         min-width: 300px;
         padding-right: 200px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        font-size: var(--font-size-small);
         .NameWrapper {
           display: flex;
           gap: 16px;

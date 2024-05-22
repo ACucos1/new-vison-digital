@@ -385,8 +385,7 @@ a high-level estimate and scope of work.'
               action='/'
               method='POST'
               data-netlify='true'
-              name='contact'
-              className='regular-text-small gsap-fade-in'>
+              name='contact'>
               <input type='hidden' name='form-name' value='contact' />
               <div className={`regular-text-med`}>
                 <p>Project Submission Form</p>
