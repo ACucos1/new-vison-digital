@@ -393,11 +393,24 @@ a high-level estimate and scope of work.'
                 <p>Project Submission Form</p>
               </div>
               <div className={styles.NameWrapper}>
-                <input type='text' placeholder='First Name' required />
-                <input type='text' placeholder='Last Name' />
+                <label htmlFor='fname' hidden></label>
+                <input
+                  name='fname'
+                  type='text'
+                  placeholder='First Name'
+                  required
+                />
+                <label htmlFor='lname' hidden></label>
+                <input name='lname' type='text' placeholder='Last Name' />
               </div>
-              <input type='text' placeholder='Company Name' />
-              <input type='email' placeholder='Email' required />
+              <label htmlFor='companyname' hidden></label>
+              <input
+                name='companyname'
+                type='text'
+                placeholder='Company Name'
+              />
+              <label htmlFor='email' hidden></label>
+              <input name='email' type='email' placeholder='Email' required />
               <label htmlFor='proposal'>Project Proposal/RFP</label>
               <input
                 type='file'
