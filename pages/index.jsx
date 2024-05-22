@@ -446,3 +446,7 @@ a high-level estimate and scope of work.'
     </>
   );
 }
+
+export const getStaticProps = () => {
+  return { props: {} };
+};
