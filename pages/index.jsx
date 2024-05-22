@@ -14,7 +14,7 @@ export default function Home() {
 
   const handleFormSubmit = (e) => {
     const myForm = e.target;
-    if (!form.checkValidity()) return;
+    if (!myForm.checkValidity()) return;
     const formData = new FormData(myForm);
 
     fetch("/", {
@@ -382,8 +382,8 @@ a high-level estimate and scope of work.'
             </div>
             <form
               onSubmit={handleFormSubmit}
-              method='POST'
               action='/'
+              method='POST'
               data-netlify='true'
               name='contact'
               className='regular-text-small gsap-fade-in'>
