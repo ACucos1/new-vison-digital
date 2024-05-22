@@ -9,7 +9,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Home() {
+export default function Home(props) {
   const animationRef = useRef();
 
   const handleFormSubmit = (e) => {
