@@ -387,7 +387,7 @@ a high-level estimate and scope of work.'
               data-netlify='true'
               onSubmit={handleFormSubmit}
               className={`${styles.ContactForm} regular-text-small gsap-fade-in`}>
-              <input type='hidden' name='form-name' value='contact-form' />
+              <input type='hidden' name='form-name' value='contact' />
               <div className={`regular-text-med`}>
                 <p>Project Submission Form</p>
               </div>
