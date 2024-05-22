@@ -390,7 +390,7 @@ a high-level estimate and scope of work.'
               className={`${styles.ContactForm} regular-text-small gsap-fade-in`}>
               <input type='hidden' name='form-name' value='contact-form' />
               <div className={`regular-text-med`}>
-                <SplitText text='Project Submission Form' />
+                <p>Project Submission Form</p>
               </div>
               <div className={styles.NameWrapper}>
                 <input type='text' placeholder='First Name' required />
