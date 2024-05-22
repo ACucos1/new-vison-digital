@@ -416,7 +416,6 @@ a high-level estimate and scope of work.'
                 name='proposal'
                 placeholder='Project Proposal/RFP'
                 accept='.pdf, .docx, .doc'
-                // style={{ display: "none" }}
                 required
               />
               <input className='btn-primary' type='submit' value='Submit' />
