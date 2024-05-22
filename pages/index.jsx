@@ -381,11 +381,10 @@ a high-level estimate and scope of work.'
               </div>
             </div>
             <form
-              name='contact-form'
+              name='contact'
               method='POST'
               action='/'
               data-netlify='true'
-              encType='multipart/form-data'
               onSubmit={handleFormSubmit}
               className={`${styles.ContactForm} regular-text-small gsap-fade-in`}>
               <input type='hidden' name='form-name' value='contact-form' />
