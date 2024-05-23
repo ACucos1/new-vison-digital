@@ -135,7 +135,7 @@ export default function Home({ data }) {
         />
         <meta name='og:title' content='Vison Digital' />
         <meta name='og:image' content='../public/images/opengraph_image.png' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='favicon.ico' />
       </Head>
       <Navbar />
       <main className={`${styles.Main}`} ref={animationRef}>
