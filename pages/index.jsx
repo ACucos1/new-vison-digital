@@ -414,7 +414,6 @@ a high-level estimate and scope of work.'
               <textarea
                 name='proposal'
                 placeholder='Project Proposal/RFP'
-                accept='.pdf, .docx, .doc'
                 required
               />
               <input className='btn-primary' type='submit' value='Submit' />
