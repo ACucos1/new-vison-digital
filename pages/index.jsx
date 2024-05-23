@@ -385,7 +385,7 @@ a high-level estimate and scope of work.'
               onSubmit={handleFormSubmit}
               action='/'
               method='POST'
-              netlify
+              data-netlify='true'
               name='contact'>
               <input type='hidden' name='form-name' value='contact' />
               <div className={`regular-text-med`}>
