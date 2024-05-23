@@ -9,7 +9,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Home(props) {
+export default function Home({ data }) {
   const animationRef = useRef();
 
   const handleFormSubmit = (e) => {
@@ -458,5 +458,10 @@ a high-level estimate and scope of work.'
 }
 
 export const getStaticProps = async () => {
-  return { props: {} };
+  console.log("Loaded.");
+  return {
+    props: {
+      data: "data",
+    },
+  };
 };
