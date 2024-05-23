@@ -22,8 +22,13 @@ export default function Home({ data }) {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     });
-
     e.preventDefault();
+
+    gsap.to(".contact-form > *:not(.gsap-submissoin-msg)", {
+      opacity: 0,
+      duration: 0.5,
+    });
+    gsap.to(".gsap-submission-msg", { opacity: 1, pointerEvents: "all" });
   };
 
   //Client Section Animation
@@ -381,12 +386,14 @@ a high-level estimate and scope of work.'
                 </div>
               </div>
             </div>
+
             <form
               onSubmit={handleFormSubmit}
               action='/'
               method='POST'
               data-netlify='true'
-              name='contact'>
+              name='contact'
+              className='contact-form'>
               <input type='hidden' name='form-name' value='contact' />
               <div className={`regular-text-med`}>
                 <p>Project Submission Form</p>
@@ -417,6 +424,13 @@ a high-level estimate and scope of work.'
                 required
               />
               <input className='btn-primary' type='submit' value='Submit' />
+              <div
+                className={`${styles.SubmissionMessage} gsap-submission-msg`}>
+                <p className='regular-text-large'>
+                  Thanks, <br />
+                  We'll be in touch!
+                </p>
+              </div>
             </form>
           </div>
         </section>

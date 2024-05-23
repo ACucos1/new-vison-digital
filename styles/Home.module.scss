@@ -304,9 +304,19 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 200;
         font-size: var(--font-size-small);
+        position: relative;
         .NameWrapper {
           display: flex;
           gap: 16px;
+        }
+
+        .SubmissionMessage {
+          position: absolute;
+          top: 0;
+          left: 0;
+          // translate: 0 -70%;
+          opacity: 0;
+          pointer-events: none;
         }
 
         & > * {
