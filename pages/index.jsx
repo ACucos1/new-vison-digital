@@ -19,6 +19,7 @@ export default function Home(props) {
 
     fetch("/", {
       method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     });
 
@@ -409,9 +410,8 @@ a high-level estimate and scope of work.'
               />
               <label htmlFor='email' hidden></label>
               <input name='email' type='email' placeholder='Email' required />
-              <label htmlFor='proposal'>Project Proposal/RFP</label>
-              <input
-                type='file'
+
+              <textarea
                 name='proposal'
                 placeholder='Project Proposal/RFP'
                 accept='.pdf, .docx, .doc'
